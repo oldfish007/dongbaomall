@@ -20,7 +20,12 @@ public class UserMemberTest {
         t.setNote("note");
         t.setNickName("nick");
         umsMemberMapper.insert(t);
+    }
 
-
+    @Test
+    void testUpdate(){
+        UmsMember t = new UmsMember();
+        t.setId(63L);
+        umsMemberMapper.updateById(t);
     }
 }
