@@ -25,7 +25,11 @@ public class UserMemberTest {
     @Test
     void testUpdate(){
         UmsMember t = new UmsMember();
-        t.setId(63L);
+        t.setId(61L);
         umsMemberMapper.updateById(t);
     }
+
+
+
+
 }
